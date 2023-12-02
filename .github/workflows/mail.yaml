@@ -57,19 +57,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ahmedsaleem704/cspdy-350-ci:1.0
-
-  run-container:
-    needs: deploy
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Docker Buildx (you may need to adjust this if necessary)
-        uses: docker/setup-buildx-action@v1
-
-      - name: Run Docker container
-        run: docker run -d -p 8080:80 ahmedsaleem704/cspdy-350-ci:1.0
-
+            ahmedsaleem704/cspdy-350-ci:2.0
