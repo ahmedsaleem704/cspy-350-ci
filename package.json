@@ -5,13 +5,13 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha test/test.js"
+    "test": "mocha test/test.js",
+    "build": "echo 'node build.js'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3",
-    "test": "^3.3.0"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "mocha": "^9.2.2",
