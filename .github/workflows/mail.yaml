@@ -1,4 +1,4 @@
-name: CI/CD Workflow
+Name: CI/CD Workflow
 
 on:
   push:
@@ -36,10 +36,12 @@ jobs:
 
   # Add the second job here
 
-deploy:
-    needs: build-and-test
-      runs-on: ubuntu-latest
+jobs:
+  # ... (build-and-test job remains the same)
 
+  deploy:
+    needs: build-and-test
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
