@@ -36,9 +36,9 @@ jobs:
 
   # Add the second job here
 
-jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
+deploy:
+    needs: build-and-test
+      runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
