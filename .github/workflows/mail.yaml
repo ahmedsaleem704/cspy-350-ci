@@ -37,7 +37,7 @@ jobs:
   # Add the second job here
 
 jobs:
-  Docker Hub Actions
+  docker-hub-actions
     runs-on: ubuntu-latest
 
     steps:
