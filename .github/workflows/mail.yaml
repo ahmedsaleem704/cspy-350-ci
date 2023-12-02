@@ -36,8 +36,8 @@ jobs:
 
   # Add the second job here
 
-deploy:
-    needs: Docker Hub Actions
+jobs:
+  Docker Hub Actions
     runs-on: ubuntu-latest
 
     steps:
